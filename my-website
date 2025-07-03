@@ -1,56 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Clarion Kipchumba - CV Website</title>
+  <meta charset="UTF-8" />
+  <title>Clarion Kipchumba - Personal Website</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      background-color: #f4f4f4;
       margin: 0;
       padding: 0;
     }
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
     .container {
-      max-width: 800px;
-      margin: 50px auto;
+      max-width: 900px;
+      margin: 20px auto;
       background: white;
       padding: 30px;
-      border-radius: 8px;
+      border-radius: 10px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    h1 {
+    h1, h2 {
       color: #2c3e50;
+    }
+    ul {
+      line-height: 1.6;
     }
     .btn {
       display: inline-block;
-      margin-top: 20px;
+      margin-top: 15px;
       padding: 10px 20px;
-      background: #3498db;
+      background-color: #3498db;
       color: white;
       text-decoration: none;
       border-radius: 5px;
     }
     .btn:hover {
-      background: #2980b9;
+      background-color: #2980b9;
+    }
+    article {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f9f9f9;
+      border-left: 5px solid #3498db;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #eee;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <h1>Clarion Kimuron Kipchumba</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#cv">CV</a>
+      <a href="#blog">Blog</a>
+    </nav>
+  </header>
+
   <div class="container">
-    <h1>Clarion Kipchumba</h1>
-    <p>Email: salariosclarion@gmail.com</p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I am a self-motivated individual with a strong passion for technology and personal growth. I enjoy learning new things, solving problems, and helping others understand computers.</p>
+    </section>
 
-    <h2>About Me</h2>
-    <p>I am a self-motivated individual with a strong passion for technology and personal growth.</p>
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>2010–2019:</strong> Primary Education – Soti Academy</li>
+        <li><strong>2019–2023:</strong> High School – St. Anthony Kitale</li>
+      </ul>
+    </section>
 
-    <h2>Education</h2>
-    <ul>
-      <li>2010–2019: Primary Education – Soti Academy</li>
-      <li>2019–2023: High School – St. Anthony Kitale</li>
-    </ul>
+    <section id="cv">
+      <h2>Download My CV</h2>
+      <a href="cv.pdf" class="btn" download>Download CV (PDF)</a>
+    </section>
 
-    <h2>CV</h2>
-    <a class="btn" href="cv.pdf" download>Download My CV (PDF)</a>
+    <section id="blog">
+      <h2>My Blog: Learn Computer Skills</h2>
+
+      <article>
+        <h3>🖥️ Getting Started with Computers</h3>
+        <p>If you're new to computers, start by learning basic typing, how to use the mouse, and opening common apps like browsers and folders.</p>
+      </article>
+
+      <article>
+        <h3>💡 How to Learn HTML</h3>
+        <p>HTML is the foundation of all websites. It’s simple to start: just use tags like &lt;h1&gt;, &lt;p&gt;, and &lt;a&gt; to structure your page. I recommend starting with W3Schools.com.</p>
+      </article>
+
+      <article>
+        <h3>📁 Using GitHub to Host Your Projects</h3>
+        <p>GitHub lets you save your code online and even publish websites. You only need a repository, an index.html file, and GitHub Pages enabled.</p>
+      </article>
+    </section>
   </div>
+
+  <footer>
+    &copy; 2025 Clarion Kipchumba | salariosclarion@gmail.com
+  </footer>
 </body>
 </html>
